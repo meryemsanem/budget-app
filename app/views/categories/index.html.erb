@@ -5,7 +5,7 @@
   <h1>Categories</h1>
 </div>
 
-<ul class="categories">
+<div class="categories">
   <% @categories.each do |category| %>
     <a href="<%= category_transactions_path(category) %>" class="category-link">
       <div class="category-container">
@@ -17,7 +17,7 @@
       <p class="category-amount">$<%= category.total_amount %></p>
     </a>
   <% end %>
-</ul>
+</div>
 
 <a class="add-category" href="<%= new_category_path %>">
   <button class="btn-add-category">Add a New Category</button>
