@@ -4,9 +4,10 @@ class CreateCategories < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :icon
       t.integer :author_id
-      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
+
+    add_index :categories, :author_id
   end
 end
