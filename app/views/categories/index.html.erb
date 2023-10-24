@@ -1,0 +1,24 @@
+<div class="container">
+ <div class="log-out">
+ <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+</div>
+  <h1>Categories</h1>
+</div>
+
+<div class="categories">
+  <% @categories.each do |category| %>
+    <a href="<%= category_transactions_path(category) %>" class="category-link">
+      <div class="category-container">
+        <div class="category-img">
+          <img class="category-image" src="<%= category.icon %>" alt="<%= category.name %>_image">
+        </div>
+        <p class="category-name"><%= category.name %></p>
+      </div>
+      <p class="category-amount">$<%= category.total_amount %></p>
+    </a>
+  <% end %>
+</div>
+
+<a class="add-category" href="<%= new_category_path %>">
+  <button class="btn-add-category">Add a New Category</button>
+</a>
