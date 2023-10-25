@@ -1,6 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :authenticate_user!
-  
+
   def index
     @category = Category.find(params[:category_id])
     @transactions = @category.transactions.where(author_id: current_user.id).order(created_at: :desc)
@@ -13,7 +13,7 @@ class TransactionsController < ApplicationController
 
   def create
     @transaction = current_user.transactions.new(transaction_params)
-     @transaction.user_id = current_user.id
+    @transaction.user_id = current_user.id
     if @transaction.save
       redirect_to category_transactions_path(transaction_params[:category_id]),
                   notice: 'Transaction was successfully saved.'
@@ -21,6 +21,7 @@ class TransactionsController < ApplicationController
       render :new
     end
   end
+
   private
 
   def transaction_params
