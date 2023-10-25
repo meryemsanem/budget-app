@@ -36,7 +36,7 @@ RSpec.describe 'Categories', type: :feature do
       have_selector 'h1', text: 'Add a New Category'
     end
 
-    expect(page).to have_selector('form[action="/categories"][method="post"]')  do
+    expect(page).to have_selector('form[action="/categories"][method="post"]') do
       have_button 'Save'
     end
   end

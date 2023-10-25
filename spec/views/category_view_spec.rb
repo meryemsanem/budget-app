@@ -5,7 +5,7 @@ RSpec.describe 'categories/index.html.erb', type: :view do
     user = User.create(name: 'User', email: 'user@user.com', password: 'password')
     category1 = Category.create(name: 'Category1', icon: 'Icon1', author: user)
     category2 = Category.create(name: 'Category2', icon: 'Icon2', author: user)
-    
+
     assign(:categories, [category1, category2])
     render
     expect(rendered).to have_content('Categories')
@@ -13,7 +13,7 @@ RSpec.describe 'categories/index.html.erb', type: :view do
     expect(rendered).to have_selector('.category-image', count: 2)
     expect(rendered).to have_selector('.category-name', text: 'Category1')
     expect(rendered).to have_selector('.category-name', text: 'Category2')
-    expect(rendered).to have_selector('.category-amount', text: '$0') 
+    expect(rendered).to have_selector('.category-amount', text: '$0')
     expect(rendered).to have_link('Add a New Category', href: new_category_path)
   end
 end

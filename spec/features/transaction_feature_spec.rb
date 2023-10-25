@@ -37,7 +37,7 @@ RSpec.describe 'Transactions', type: :feature do
     end
 
     expect(page).to have_selector("form[action='#{category_transactions_path(category)}'][method='post']") do
-  have_button 'Save'
+      have_button 'Save'
     end
   end
 end

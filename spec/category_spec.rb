@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Category, type: :model do
   let(:author) { User.create(name: 'Author') }
-  let(:category) { Category.new(author: author, name: 'Name', icon: 'Icon') }
+  let(:category) { Category.new(author:, name: 'Name', icon: 'Icon') }
 
   it 'is valid with a name, an icon, and an associated author' do
     expect(category).to be_valid

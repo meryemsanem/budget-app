@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Transaction, type: :model do
   let(:user) { User.create(name: 'User') }
-  let(:transaction) { Transaction.new(user: user, name: 'Transaction Name', amount: 100) }
+  let(:transaction) { Transaction.new(user:, name: 'Transaction Name', amount: 100) }
 
   it 'is valid with a name, an amount, and an associated user' do
     expect(transaction).to be_valid
