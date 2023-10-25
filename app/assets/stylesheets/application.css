@@ -98,6 +98,7 @@ body {
   margin-top: 25px;
   margin-bottom: 5px;
   font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 18px;
 }
 
 .back-icon-white {
@@ -147,13 +148,16 @@ body {
   font-size: 20px;
 }
 
-.category-container {
+.category-containerr {
   display: flex;
-  flex-direction: column;
   padding: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  background-color: white;
 }
 
-.btn-add-category {
+.btn-add-category,
+.add-transaction-btn {
   text-align: center;
   width: 100%;
   border: none;
@@ -179,9 +183,34 @@ body {
   font-size: 22px;
   padding: 10px;
   font-family: 'Proxima Nova Light', sans-serif;
-  color: var(--text-color);
+  color: #fff;
+  text-align: center;
+  background-color: var(--main-color);
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .category-header {
   background-color: var(--main-color);
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.select {
+  padding: 5px;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
