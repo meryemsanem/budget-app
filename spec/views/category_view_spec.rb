@@ -28,8 +28,7 @@ RSpec.describe 'categories/new.html.erb', type: :view do
 
     expect(rendered).to have_selector('div.category-header') do
       have_selector 'h1', text: 'Add a New Category'
-      have_selector 'form[action=?][method=?]', categories_path, 'post' do
-      end
+      have_selector 'form[action=?][method=?]', categories_path, 'post'
     end
   end
 end
