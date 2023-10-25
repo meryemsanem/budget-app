@@ -1,15 +1,118 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+:root {
+  --main-color: #3778c2;
+  --second-color: #5fb523;
+  --text-color: #434b54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app-name {
+  font-size: 36px;
+  color: var(--text-color);
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.log-btn,
+.sign-btn {
+  display: block;
+  padding: 20px;
+}
+
+.splash {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.log-btn {
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  margin-inline: 30px;
+}
+
+.sign-btn {
+  color: var(--text-color);
+}
+
+.back-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-input {
+  border-inline: none;
+  border-top: none;
+  width: 100%;
+  border-bottom: 1px solid rgb(67, 75, 84, 0.2);
+  padding: 10px;
+  color: var(--text-color);
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-input::placeholder {
+  padding: 10px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-submit {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.back-icon-white {
+  width: 60%;
+}
+
+.resend-confirmation-link,
+.forgot-password-link {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
