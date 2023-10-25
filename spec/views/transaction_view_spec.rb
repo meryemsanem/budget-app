@@ -16,7 +16,6 @@ RSpec.describe 'transactions/index.html.erb', type: :view do
 
     expect(rendered).to have_content('Transactions')
 
-
     transactions.each do |transaction|
       expect(rendered).to have_selector('.transaction-name', text: transaction.name)
       expect(rendered).to have_selector('.transaction-amount', text: "$#{transaction.amount}")
