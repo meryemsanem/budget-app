@@ -86,7 +86,8 @@ body {
   font-family: 'Proxima Nova Light', sans-serif;
 }
 
-.form-submit {
+.form-submit,
+.btn-save {
   text-align: center;
   width: 100%;
   border: none;
@@ -115,4 +116,72 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 5px;
+}
+
+.log-out {
+  border: none;
+  padding: 8px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.page-name {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Proxima Nova Light', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.btn-add-category {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  background-color: var(--second-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.notice {
+  display: flex;
+  text-align: center;
+  color: var(--second-color);
+  justify-content: center;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.add-name {
+  font-size: 22px;
+  padding: 10px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: var(--text-color);
+}
+
+.category-header {
+  background-color: var(--main-color);
 }
