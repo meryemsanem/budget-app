@@ -154,6 +154,7 @@ body {
   font-size: 20px;
   justify-content: space-between;
   background-color: white;
+  align-items: center;
 }
 
 .btn-add-category,
@@ -222,13 +223,15 @@ body {
   margin-inline: 20px;
   background-color: #fff;
   margin-top: 20px;
+  align-items: center;
 }
 
 .category-img {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .category-image {
-  width: 30%;
+  width: 35%;
 }
