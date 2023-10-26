@@ -214,3 +214,17 @@ body {
   padding: 5px;
   font-family: 'Proxima Nova Light', sans-serif;
 }
+
+.category-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.category-img {
+  display: flex;
+  gap: 15px;
+}
