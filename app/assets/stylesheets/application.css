@@ -91,7 +91,7 @@ body {
   text-align: center;
   width: 100%;
   border: none;
-  padding: 6px;
+  padding: 20px;
   cursor: pointer;
   background-color: var(--main-color);
   color: #fff;
@@ -99,6 +99,8 @@ body {
   margin-bottom: 5px;
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 18px;
+  position: fixed;
+  bottom: 0;
 }
 
 .back-icon-white {
@@ -162,7 +164,7 @@ body {
   text-align: center;
   width: 100%;
   border: none;
-  padding: 6px;
+  padding: 20px;
   cursor: pointer;
   background-color: var(--second-color);
   color: #fff;
@@ -170,6 +172,8 @@ body {
   justify-content: center;
   margin-top: 5px;
   font-size: 18px;
+  position: fixed;
+  bottom: 0;
 }
 
 .notice {
