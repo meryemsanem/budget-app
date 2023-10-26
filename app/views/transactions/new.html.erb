@@ -16,7 +16,7 @@
     </div>
 
     <div class="select">
-      <%= form.collection_select :category_id, Category.all, :id, :name, prompt: 'Select a Category', class: "select" %>
+     <%= form.collection_select :category_id, Category.where(author: current_user).all, :id, :name, prompt: 'Select a Category', class: "select" %>
     </div>
 
     <div class="form-btn-container">
