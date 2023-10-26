@@ -193,10 +193,14 @@ body {
   background-color: var(--main-color);
   font-weight: 100;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .category-header {
   background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .transactions {
