@@ -11,7 +11,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 1.5', '>= 1.5.4'
 
 gem 'devise'
 
