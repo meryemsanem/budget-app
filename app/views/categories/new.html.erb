@@ -1,0 +1,23 @@
+<div class="category-header">
+  <a class="back-button" href="<%= categories_path %>">
+    <img class="back-icon" src="<%= asset_path('back-white.png') %>" alt="back-icon">
+  </a>
+  <h1 class="add-name">Add a New Category</h1>
+  </div>
+
+
+<%= form_with(model: @category, url: categories_path) do |form| %>
+  <div class="category-form">
+    <div class="form-field">
+      <%= form.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Category", class: "form-input", required: true %>
+    </div>
+
+    <div class="form-field">
+      <%= form.text_field :icon, autofocus:true, autocomplete: "icon", placeholder: "Icon URL", class: "form-input", required: true %>
+    </div>
+
+    <div class="form-btnr">
+      <%= form.submit 'Save', class: "btn-save" %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+<div class="back-header">
+ <a class="back-button" href="<%= categories_path %>">
+    <img class="back-icon-white" src="<%= asset_path('back-white.png') %>" alt="back-icon">
+  </a>
+<h2 class="form-title">LOG IN</h2>
+</div>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "login-form" }) do |f| %>
+  <div class="field">
+    <%= f.label :email, class: "form-label" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-input" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password, class: "form-label" %><br />
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-input" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me, class: "form-checkbox" %>
+      <%= f.label :remember_me, class: "form-checkbox-label" %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log In", class: "form-submit" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

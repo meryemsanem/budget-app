@@ -1,0 +1,245 @@
+:root {
+  --main-color: #3778c2;
+  --second-color: #5fb523;
+  --text-color: #434b54;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.app-name {
+  font-size: 36px;
+  color: var(--text-color);
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.log-btn,
+.sign-btn {
+  display: block;
+  padding: 20px;
+}
+
+.splash {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.log-btn {
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  margin-inline: 30px;
+}
+
+.sign-btn {
+  color: var(--text-color);
+}
+
+.back-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-input {
+  border-inline: none;
+  border-top: none;
+  width: 100%;
+  border-bottom: 1px solid rgb(67, 75, 84, 0.2);
+  padding: 25px;
+  color: var(--text-color);
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-input::placeholder {
+  padding: 10px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.form-submit,
+.btn-save {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+}
+
+.back-icon-white {
+  width: 60%;
+}
+
+.resend-confirmation-link,
+.forgot-password-link {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.log-out {
+  border: none;
+  padding: 8px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.page-name {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Proxima Nova Light', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.category-containerr {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+
+.btn-add-category,
+.add-transaction-btn {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  background-color: var(--second-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+}
+
+.notice {
+  display: flex;
+  text-align: center;
+  color: var(--second-color);
+  justify-content: center;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.add-name {
+  font-size: 22px;
+  padding: 10px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  color: #fff;
+  text-align: center;
+  background-color: var(--main-color);
+  font-weight: 100;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.category-header {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.select {
+  padding: 5px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.category-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.category-img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.category-image {
+  width: 35%;
+}

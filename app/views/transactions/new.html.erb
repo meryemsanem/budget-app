@@ -1,0 +1,26 @@
+<div class="category-header">
+  <a class="back-button" href="<%= category_transactions_path(@category) %>">
+    <img class="back-icon" src="<%= asset_path('back-white.png') %>" alt="Back">
+  </a>
+  <h1 class="add-name">Add a New Transaction</h1>
+</div>
+
+<%= form_with(model: [@category, @transaction], url: category_transactions_path(@category)) do |form| %>
+  <div class="transaction-form-container">
+    <div class="form-field">
+      <%= form.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Transaction Name", class: "form-input", required: true %>
+    </div>
+
+    <div class="form-field">
+      <%= form.number_field :amount, autocomplete: "amount", placeholder: "Amount", class: "form-input", required: true %>
+    </div>
+
+    <div class="select">
+     <%= form.collection_select :category_id, Category.where(author: current_user).all, :id, :name, prompt: 'Select a Category', class: "select" %>
+    </div>
+
+    <div class="form-btn-container">
+      <%= form.submit 'Save', class: "btn-save" %>
+    </div>
+  </div>
+<% end %>

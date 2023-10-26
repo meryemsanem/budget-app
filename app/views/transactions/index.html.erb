@@ -1,0 +1,29 @@
+<div class="category-header">
+  <a class="back-btn-a" href="<%= categories_path(@category) %>">
+      <img class="back-icon" src="<%= asset_path('back-white.png') %>" alt="back-icon">
+  </a>
+  <h1 class="add-name">Transactions</h1>
+</div>
+
+  <div class="category-containerr">
+   <div class="category-img">
+          <img class="category-image" src="<%= @category.icon %>" alt="<%= @category.name %>_image">
+        <p class="category-name"><%= @category.name %></p>
+        </div>
+      <p class="category-amount">$<%= @category.total_amount %></p>
+      </div>
+
+<div class="transactions">
+    <% @transactions.each do |transaction| %>
+      <div class="transaction">
+        <p class="transaction-name"><%= transaction.name %></p>
+        <p class="transaction-amount">$<%= transaction.amount %></p> 
+      </div>
+      <br>
+    <% end %>
+    </div>
+
+  <a class="add-transaction-a" href="<%= new_category_transaction_path(@category) %>">
+    <button class="add-transaction-btn">Add a New Transaction</button>
+  </a>
+</div>
