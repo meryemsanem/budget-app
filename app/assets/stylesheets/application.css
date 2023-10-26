@@ -228,3 +228,7 @@ body {
   display: flex;
   gap: 15px;
 }
+
+.category-image {
+  width: 30%;
+}
