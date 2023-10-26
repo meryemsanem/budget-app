@@ -11,6 +11,8 @@
 - [📖 Budget App](#-about-project)
   - [🛠 Built With](#-built-with)
   - [🌟 Key Features](#-key-features)
+  - [ 🚀 Live Demo](#-live-demo)
+  - [ Presentation](#-presentation)
   - [💻 Getting Started](#-getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -43,6 +45,22 @@
 - **Expense Tracking:** Users can log their daily expenses, categorize them, and view their spending history.
 
 <p align="right">(<a href="#-table-of-contents">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://budget-app-yvr4.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Presentation -->
+
+## Presentation Video <a name="presentation"></a>
+
+- [Presentation Video Link](https://www.loom.com/share/ecb8da6c9ef14e96a796b78ac87cbf67?sid=7cf2dfef-2d50-4c35-bdde-8b47c6abe676s)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
