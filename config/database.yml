@@ -17,6 +17,6 @@ test:
 
 production:
   <<: *default
-  database: budget_app_production
-  username: budget_app
+  database: budget_app_z2ba
+  username: budget
   password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
