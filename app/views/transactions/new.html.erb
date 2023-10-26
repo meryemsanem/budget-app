@@ -1,8 +1,8 @@
-<div class="transaction-header">
+<div class="category-header">
   <a class="back-button" href="<%= category_transactions_path(@category) %>">
-    <img class="back-icon" src="<%= asset_path('back.png') %>" alt="Back">
+    <img class="back-icon" src="<%= asset_path('back-white.png') %>" alt="Back">
   </a>
-  <h1>Add a New Transaction</h1>
+  <h1 class="add-name">Add a New Transaction</h1>
 </div>
 
 <%= form_with(model: [@category, @transaction], url: category_transactions_path(@category)) do |form| %>
@@ -15,7 +15,7 @@
       <%= form.number_field :amount, autocomplete: "amount", placeholder: "Amount", class: "form-input", required: true %>
     </div>
 
-    <div class="form-field">
+    <div class="select">
       <%= form.collection_select :category_id, Category.all, :id, :name, prompt: 'Select a Category', class: "select" %>
     </div>
 
