@@ -5,7 +5,7 @@ RSpec.describe 'Transactions', type: :feature do
     user = User.create(name: 'User', email: 'user@user.com', password: 'password')
     category = Category.create(name: 'Category1', icon: 'Icon1', author: user)
     Transaction.create(name: 'Transaction 1', amount: 50, category_id: 1)
-    user.confirm
+   
 
     visit new_user_session_path
 
@@ -22,7 +22,7 @@ RSpec.describe 'Transactions', type: :feature do
   it 'displays the form for creating a new transaction' do
     user = User.create(name: 'User', email: 'user@user.com', password: 'password')
     category = Category.create(name: 'Category1', icon: 'Icon1', author: user)
-    user.confirm
+    
 
     visit new_user_session_path
 
