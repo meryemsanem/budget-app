@@ -5,7 +5,7 @@ RSpec.describe 'Categories', type: :feature do
     user = User.create(name: 'User', email: 'user@user.com', password: 'password')
     Category.create(name: 'Category1', icon: 'Icon1', author: user)
     Category.create(name: 'Category2', icon: 'Icon2', author: user)
-   
+
     visit new_user_session_path
 
     fill_in 'Email', with: 'user@user.com'
@@ -22,8 +22,8 @@ RSpec.describe 'Categories', type: :feature do
   end
 
   it 'displays the form for creating a new category' do
-    user = User.create(name: 'User', email: 'user@user.com', password: 'password')
- 
+    User.create(name: 'User', email: 'user@user.com', password: 'password')
+
     visit new_user_session_path
 
     fill_in 'Email', with: 'user@user.com'
