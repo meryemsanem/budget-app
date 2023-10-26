@@ -37,7 +37,7 @@ RSpec.describe 'transactions/new.html.erb', type: :view do
   it 'displays the form for creating a new transaction' do
     render
 
-    expect(rendered).to have_selector('div.transaction-header') do
+    expect(rendered).to have_selector('div.category-header') do
       have_selector 'h1', text: 'Add a New Transaction'
       have_selector 'form[action=?][method=?]', categories_path, 'post'
     end

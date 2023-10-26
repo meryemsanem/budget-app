@@ -11,7 +11,7 @@ RSpec.describe 'Transactions', type: :feature do
 
     fill_in 'Email', with: 'user@user.com'
     fill_in 'Password', with: 'password'
-    click_button 'Log in'
+    click_button 'Log In'
 
     visit category_transactions_path(category)
 
@@ -28,11 +28,11 @@ RSpec.describe 'Transactions', type: :feature do
 
     fill_in 'Email', with: 'user@user.com'
     fill_in 'Password', with: 'password'
-    click_button 'Log in'
+    click_button 'Log In'
 
     visit new_category_transaction_path(category)
 
-    expect(page).to have_selector('.transaction-header') do
+    expect(page).to have_selector('.category-header') do
       have_selector 'h1', text: 'Add a New Transaction'
     end
 

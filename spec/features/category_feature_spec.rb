@@ -10,7 +10,7 @@ RSpec.describe 'Categories', type: :feature do
 
     fill_in 'Email', with: 'user@user.com'
     fill_in 'Password', with: 'password'
-    click_button 'Log in'
+    click_button 'Log In'
 
     expect(page).to have_content('Categories')
     expect(page).to have_selector('.category-link', count: 2)
@@ -28,7 +28,7 @@ RSpec.describe 'Categories', type: :feature do
 
     fill_in 'Email', with: 'user@user.com'
     fill_in 'Password', with: 'password'
-    click_button 'Log in'
+    click_button 'Log In'
 
     visit new_category_path
 
