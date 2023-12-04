@@ -1,6 +1,6 @@
 databases:
   - name: budget-app
-    databaseName: budget_app_z2ba
+    databaseName: budget_er8s
     user: budget
 
 services:
